@@ -206,7 +206,7 @@ print(f"✅ Before Pruning Score (Dense Model Accuracy): {before_pruning_score:.
 # Each round prunes 20% of the SURVIVING weights.
 # After 5 rounds, cumulative sparsity ≈ 1 - (0.9^5) ≈ 41% — much more gradual than one-shot 40%.
 NUM_ROUNDS          = 5
-prune_percent_per_round = 0.1
+prune_percent_per_round = 0.2
 
 # Cumulative mask: starts as all-ones (keep everything), gets ANDed each round
 cumulative_masks = {}
